@@ -25,7 +25,27 @@
                 ]
 
                 for (var i=0;i<data.length;i++) {
-                    var row = `
+                    if (i == 2) {
+                        var row = `
+                        <tr class="main-row" id="trId_${i}" data-tt-id="${i}">
+                            <td style="width: 100px;">${data[i][0]}</td>
+                            <td style="width: 15px;">
+                                <i style="color: #2196f3" data-feather="folder"></i>
+                            </td>
+                            <td>${data[i][2]}</td>
+                            <td style="width: 150px;">${data[i][3]}</td>
+                            <td style="width: 150px;">${data[i][4]}</td>
+                            <td style="width: 70px;">${data[i][5]}</td>
+                            <td style="width: 50px;">
+                                <!-- <div class="add-btn" onclick="subAction(this)" style="padding:5px; text-align: center; background-color: #2196f3; cursor: pointer; color: #fff;">+</div> -->
+                                <!-- <div class="min-btn" onclick="minAction(this)" style="display:none; padding:6px; text-align: center; background-color: #f44336; cursor: pointer; color: #fff;">-</div> -->
+                            </td>
+                            <td style="width: 100px;">${data[i][6]}</td>
+                            <td style="width: 100px;">${data[i][7]}</td>
+                            <td style="width: 100px;">${data[i][8]}</td>
+                        </tr>`
+                    } else {
+                        var row = `
                         <tr class="main-row" id="trId_${i}" data-tt-id="${i}">
                             <td style="width: 100px;">${data[i][0]}</td>
                             <td style="width: 15px;">
@@ -43,6 +63,8 @@
                             <td style="width: 100px;">${data[i][7]}</td>
                             <td style="width: 100px;">${data[i][8]}</td>
                         </tr>`
+                    }
+                    
                     $("#tableBody").append(row)
                 }
 
