@@ -259,6 +259,7 @@
                 var pPadding = $(e.parentElement.parentElement.children[2].firstElementChild)
                 var sPadding = pPadding.css("padding-left")
                 var sPaddingInt = parseInt(sPadding.slice(0, -2))
+                subData.reverse()
                 for (var i=0;i<subData.length;i++) {
                     var subRow = `
                     <tr class="sub-row">
@@ -292,7 +293,7 @@
                 $("#coAllDoc").css("display", "block")
             }
 
-            function coAllDoc() {
+            function coAllDoc() { 
                 $(".min-btn").each((i, item) => {
                     minAction(item)
                 })
@@ -303,8 +304,8 @@
     </head>
     <body onload="addAction()" style="font-family: sans-serif;">
         <div style="display: flex; align-items: flex-start; justify-content: space-between; width: 450px;">
-            <div style="width: 100px; background: #2196f3; color: #fff; text-align: center; padding: 5px; cursor: pointer;" onclick="$('#treeTable').treetable('expandAll'); return false;">Expand all</div>
-            <div style="width: 100px; background: #f44336; color: #fff; text-align: center; padding: 5px; cursor: pointer;" onclick="$('#treeTable').treetable('collapseAll'); return false;">Collapse all</div>
+            <div id="exAll" style="display: none; width: 100px; background: #2196f3; color: #fff; text-align: center; padding: 5px; cursor: pointer;" onclick="$('#coAll').css('display', 'block'); $('#exAll').css('display', 'none'); $('#treeTable').treetable('expandAll'); return false;">Expand all</div>
+            <div id="coAll" style="display: block; width: 100px; background: #f44336; color: #fff; text-align: center; padding: 5px; cursor: pointer;" onclick="coAllDoc(); $('#coAll').css('display', 'none'); $('#exAll').css('display', 'block'); $('#treeTable').treetable('collapseAll'); return false;">Collapse all</div>
             <div id="exAllDoc" style="display: block; width: 200px; background: #2196f3; color: #fff; text-align: center; padding: 5px; cursor: pointer;" onclick="exAllDoc()">Expand all documents</div>
             <div id="coAllDoc" style="display: none; width: 200px; background: #f44336; color: #fff; text-align: center; padding: 5px; cursor: pointer;" onclick="coAllDoc()">Collapse all documents</div>
         </div>
