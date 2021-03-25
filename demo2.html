@@ -18,7 +18,7 @@
                     ['Yarn Lot', 'data icon', 'V2007076-36', '', '', 'Australia', '', '', '', '', ],
                     ['Yarn Order', 'data icon', 'GEKPO201009027', 'DALIAN SHENZHOU TEXTILE CO., LTD (大连神州纺织有限公司)', 'Shan Dong, China', '', '', '', '', '', ],
                     ['Yarn Lot', 'data icon', 'CVCNI1060-48605', '', '', 'Australia', '', '', '', '', ],
-                    ['Yarn Order', 'data icon', 'GEKPO201010315', 'GUANGDONG ESQUEL TEXTILES CO LIMITED', 'China', 'Australia', '', '', '', '', ],
+                    ['Yarn Order', 'data icon', 'GEKPO201010315', 'GUANGDONG ESQUEL TEXTILES CO LIMITED', 'China', '', '', '', '', '', ],
                     ['Yarn Lot', 'data icon', 'H120-127573J', '', '', 'Australia', '', '', '', '', ],
                     ['Cotton Lot', 'data icon', 'AUG5174242-自用', 'OLAM INTERNATIONAL LIMITED', 'Singapore', 'Australia', '', '', '', '', ],
                     ['Cotton Lot', 'data icon', 'AUQAHJ13-自用', 'LOUIS DREYFUS COMPANY ASIA PTE LTD', 'Singapore', 'Australia', '', '', '', '', ],
@@ -80,6 +80,7 @@
                 var subData = [];
                 
                 switch (e.parentElement.parentElement.id) {
+                    // 45331995
                     case 'trId_0':
                         subData = [
                             ['', 'file icon', '45331995 01 ISF 01.pdf', '', '', '', '', '5', 'ISF', 'Broker\'s instructions for entry processing', ],
@@ -97,12 +98,15 @@
                         modRow(subData, e)
                     break;
                     case 'trId_1':
+                        // S20X08160
                         subData = [
                             ['', 'file icon', 'S20X08160 GO 01.pdf', '', '', '', '', '16', 'GO', 'Garment order report', ],
                         ];
                         modRow(subData, e)
                     break;
+                    // trId_2 20X08160US01
                     case 'trId_3':
+                        // PKGK20AA0308160A
                         subData = [
                             ['', 'file icon', 'PKGK20AA0308160A PPO 01.pdf', '', '', '', '', '21', 'PPO', 'Fabric order report', ],
                             ['', 'file icon', 'PKGK20AA0308160A GFOUT 01.pdf', '', '', '', '', '17', 'GFOUT', 'Garment factory: detailed listing of fabric issuing', ],
@@ -115,12 +119,14 @@
                         modRow(subData, e)
                     break;
                     case 'trId_4':
+                        // GEKPO200721018
                         subData = [
                             ['', 'file icon', 'GEKPO200721018 YO 01.pdf', '', '', '', '', '26', 'YO', 'Yarn order report', ],
                         ];
                         modRow(subData, e)
                     break;
                     case 'trId_5':
+                        // V2007076-36
                         subData = [
                             ['',	'file icon',	'V2007076-36 YPV 10-01.pdf		', '', '', '', '',		'29',   '	YPV		','3rd party yarn supporting doc: yarn payment voucher', ], 
                             ['',	'file icon',	'V2007076-36 YPV 10-02.JPG		', '', '', '', '',		'29',   '	YPV		','3rd party yarn supporting doc: yarn payment voucher', ], 
@@ -152,22 +158,45 @@
                         ];
                         modRow(subData, e)
                     break;
+                    case 'trId_6':
+                        // GEKPO201009027
+                        subData = [
+                            ['', 'file icon', 'GEKPO201009027 YO 01.pdf', '', '', '', '', '26', 'YO', 'Yarn order report', ],
+                        ];
+                        modRow(subData, e)
+                    break;
                     case 'trId_7':
+                        // CVCNI1060-48605
+                        subData = [
+                            ['', '	file icon','	CVCNI1060-48605 YPV 7-01.pdf	', '', '', '', '', '			29','	YPV		','3rd party yarn supporting doc: yarn payment voucher', ], 
+                            ['', '	file icon','	CVCNI1060-48605 YINV 7-01.pdf	', '', '', '', '', '			33','	YINV	','3rd party yarn supporting doc: yarn invoice', ], 
+                            ['', '	file icon','	CVCNI1060-48605 YC 01.pdf		', '', '', '', '', '			34','	YC		','3rd party yarn supporting doc: yarn contract', ], 
+                            ['', '	file icon','	CVCNI1060-48605 YPO 01.pdf		', '', '', '', '', '			35','	YPO		','3rd party yarn supporting doc: yarn PO', ], 
+                            ['', '	file icon','	CVCNI1060-48605 CPL 01.pdf		', '', '', '', '', '			36','	CPL		','Cotton packing list', ], 
+                            ['', '	file icon','	CVCNI1060-48605 CPL 02.pdf		', '', '', '', '', '			36','	CPL		','Cotton packing list', ], 
+                            ['', '	file icon','	CVCNI1060-48605 YPO 01.pdf		', '', '', '', '', '			35','	YPO		','3rd party yarn supporting doc: yarn PO', ], 
+                            ['', '	file icon','	CVCNI1060-48605 CBL 01.pdf		', '', '', '', '', '			37','	CBL		','Cotton bill of lading', ], 
+                            ['', '	file icon','	CVCNI1060-48605 CBL 02.pdf		', '', '', '', '', '			37','	CBL		','Cotton bill of lading', ], 
+                            ['', '	file icon','	CVCNI1060-48605 CCO 01.pdf		', '', '', '', '', '			38','	CCO		','Cotton country of origin', ], 
+                            ['', '	file icon','	CVCNI1060-48605 CCO 02.pdf		', '', '', '', '', '			38','	CCO		','Cotton country of origin', ], 
+                            ['', '	file icon','	CVCNI1060-48605 CINV 01.pdf		', '', '', '', '', '			39','	CINV	','Cotton invoice', ], 
+                            ['', '	file icon','	CVCNI1060-48605 CINV 02.pdf		', '', '', '', '', '			39','	CINV	','Cotton invoice', ], 
+                            ['', '	file icon','	CVCNI1060-48605 CC 01.pdf		', '', '', '', '', '			40','	CC		','Cotton contract', ], 
+                            ['', '	file icon','	CVCNI1060-48605 CC 02.pdf		', '', '', '', '', '			40','	CC		','Cotton contract', ], 
+                            ['', '	file icon','	CVCNI1060-48605 FYIN 01.pdf		', '', '', '', '', '			25','	FYIN	','Fabric mill: detailed listing of yarn receiving', ], 
+                            ['', '	file icon','	CVCNI1060-48605 FYOUT 01.pdf	', '', '', '', '', '			24','	FYOUT	','Fabric mill: detailed listing of yarn issuing',],
+                        ];
+                        modRow(subData, e)
+                    break;
+                    case 'trId_8':
+                        // GEKPO201010315
                         subData = [
                             ['', 'file icon', 'GEKPO201010315 YO 01.pdf', '', '', '', '', '26', 'YO', 'Yarn order report', ],
                         ];
                         modRow(subData, e)
                     break;
-                    case 'trId_8':
-                        subData = [
-                            ['', 'file icon', 'H120-127573J SYIN 01.pdf', '', '', '', '', '42', 'SYIN', 'Spinning mill: yarn finished goods to WH', ],
-                            ['', 'file icon', 'H120-127573J SYOUT 01.pdf', '', '', '', '', '41', 'SYOUT', 'Spinning mill: yarn to fabric mill', ],
-                            ['', 'file icon', 'H120-127573J FYIN 01.pdf', '', '', '', '', '25', 'FYIN', 'Fabric mill: detailed listing of yarn receiving', ],
-                            ['', 'file icon', 'H120-127573J FYOUT 01.pdf', '', '', '', '', '24', 'FYOUT', 'Fabric mill: detailed listing of yarn issuing', ],
-                        ];
-                        modRow(subData, e)
-                    break;
                     case 'trId_9':
+                        // H120-127573J
                         subData = [
                             ['', '	file icon','	H120-127573J SYIN 01.pdf		', '', '', '', '', '			42','	SYIN	','Spinning mill: yarn finished goods to WH', ], 
 	                        ['', '	file icon','	H120-127573J SYOUT 01.pdf		', '', '', '', '', '			41','	SYOUT	','Spinning mill: yarn to fabric mill', ], 
@@ -177,6 +206,7 @@
                         modRow(subData, e)
                     break;
                     case 'trId_10':
+                        // AUG5174242-自用
                         subData = [
                             ['', '	file icon','	AUG5174242-自用 CPV 01.pdf			', '', '', '', '', '		47','	CPV		','Cotton payment voucher', ], 
                             ['', '	file icon','	AUG5174242-自用 CPL 01(2).pdf		', '', '', '', '', '		36','	CPL		','Cotton packing list', ], 
@@ -199,6 +229,23 @@
                             ['', '	file icon','	AUG5174242-自用 CLC 01.pdf			', '', '', '', '', '		52','	LC		','Cotton LC', ], 
                             ['', '	file icon','	AUG5174242-自用 CDL 01.pdf			', '', '', '', '', '		46','	CDL		','Cotton declaration letter', ], 
                         ];
+                        modRow(subData, e)
+                    break;
+                    case 'trId_11':
+                        // AUQAHJ13-自用
+                        subData = [                           
+                            ['', '	file icon','	AUQAHJ13-自用 CPL 01(2).pdf		', '', '', '', '', '			36	','CPL		','Cotton packing list', ], 
+                            ['', '	file icon','	AUQAHJ13-自用 CPL 01.pdf		', '', '', '', '', '			36	','CPL		','Cotton packing list', ], 
+                            ['', '	file icon','	AUQAHJ13-自用 CBL 01(2).pdf		', '', '', '', '', '			37	','CBL		','Cotton bill of lading', ], 
+                            ['', '	file icon','	AUQAHJ13-自用 CBL 01.pdf		', '', '', '', '', '			37	','CBL		','Cotton bill of lading', ], 
+                            ['', '	file icon','	AUQAHJ13-自用 CCO 01.pdf		', '', '', '', '', '			38	','CCO		','Cotton country of origin', ], 
+                            ['', '	file icon','	AUQAHJ13-自用 CINV 01.pdf		', '', '', '', '', '			39	','CINV		','Cotton invoice', ], 
+                            ['', '	file icon','	AUQAHJ13-自用 LC 01.pdf			', '', '', '', '', '			52	','LC		','Cotton LC', ], 
+                            ['', '	file icon','	AUQAHJ13-自用 CC 01.pdf			', '', '', '', '', '			40	','CC		','Cotton contract', ], 
+                            ['', '	file icon','	AUQAHJ13-自用 CPO 01.pdf		', '', '', '', '', '			54	','CPO		','Cotton PO', ], 
+                            ['', '	file icon','	AUQAHJ13-自用 CIN 01.pdf		', '', '', '', '', '			44	','CIN		','Cotton in', ], 
+                            ['', '	file icon','	AUQAHJ13-自用 COUT 01.pdf		', '', '', '', '', '			43	','COUT		','Cotton out', ],
+                        ]
                         modRow(subData, e)
                     break;
 
