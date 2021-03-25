@@ -86,9 +86,9 @@
                             ['', 'file icon', '45331995 01 ISF 01.pdf', '', '', '', '', '5', 'ISF', 'Broker\'s instructions for entry processing', ],
                             ['', 'file icon', '45331995 01 BR 01.pdf', '', '', '', '', '6', 'BR', 'Business relationships documents', ],
                             ['', 'file icon', '45331995 01 GFA 01.pdf', '', '', '', '', '8', 'GFA', 'Garment factory\'s affidavits', ],
-                            ['', 'file icon', '45331995 01 T&A 01.pdf', '', '', '', '', '10', 'T&A', 'Timeline/summary with BOM and raw materials C/O', ],
-                            ['', 'file icon', '45331995 01 GINV 01.pdf', '', '', '', '', '11', 'GINA', 'Garment sales Invoice', ],
-                            ['', 'file icon', '45331995 01 GPL 01.pdf', '', '', '', '', '12', 'GPL', 'Garment P/L', ],
+                            ['', 'file icon', '45331995 01 T&A 01.pdf', '', '', '', '', '10', 'T&A', 'Timeline/summary with BOM and raw materials country of origin', ],
+                            ['', 'file icon', '45331995 01 GINV 01.pdf', '', '', '', '', '11', 'GINA', 'Garment sales invoice', ],
+                            ['', 'file icon', '45331995 01 GPL 01.pdf', '', '', '', '', '12', 'GPL', 'Garment packing list', ],
                             ['', 'file icon', '45331995 01 FCR 01.pdf', '', '', '', '', '13', 'FCR', 'Forwarder cargo receipt', ],
                             ['', 'file icon', '45331995 01 TM 01.pdf', '', '', '', '', '14', 'TM', 'Garment inland freight documents to the port of export', ],
                             ['', 'file icon', '45331995 01 GGOUT 01.pdf', '', '', '', '', '15', 'GGOUT', 'Detailed listing of garments finished goods issue', ],
@@ -284,6 +284,8 @@
             }
 
             function exAllDoc() {
+                $('#coAll').css('display', 'block'); 
+                $('#exAll').css('display', 'none'); 
                 $('#treeTable').treetable('expandAll'); 
 
                 $(".add-btn").each((i, item) => {
@@ -303,7 +305,7 @@
         </script>
     </head>
     <body onload="addAction()" style="font-family: sans-serif;">
-        <div style="display: flex; align-items: flex-start; justify-content: space-between; width: 450px;">
+        <div style="display: flex; align-items: flex-start; justify-content: space-between; width: 350px;">
             <div id="exAll" style="display: none; width: 100px; background: #2196f3; color: #fff; text-align: center; padding: 5px; cursor: pointer;" onclick="$('#coAll').css('display', 'block'); $('#exAll').css('display', 'none'); $('#treeTable').treetable('expandAll'); return false;">Expand all</div>
             <div id="coAll" style="display: block; width: 100px; background: #f44336; color: #fff; text-align: center; padding: 5px; cursor: pointer;" onclick="coAllDoc(); $('#coAll').css('display', 'none'); $('#exAll').css('display', 'block'); $('#treeTable').treetable('collapseAll'); return false;">Collapse all</div>
             <div id="exAllDoc" style="display: block; width: 200px; background: #2196f3; color: #fff; text-align: center; padding: 5px; cursor: pointer;" onclick="exAllDoc()">Expand all documents</div>
